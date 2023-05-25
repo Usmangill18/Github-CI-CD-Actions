@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build ./PracticeProject/PracticeProject/PracticeProject.csproj   --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./PracticeProject/PracticeProject/PracticeProject.csproj --no-build --verbosity normal
