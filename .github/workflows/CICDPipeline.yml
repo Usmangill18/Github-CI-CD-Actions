@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore .https://github.com/Usmangill18/Github-CI-CD-Actions/PracticeProject/PracticeProject/PracticeProject.csproj
+      run: dotnet restore ./PracticeProject/PracticeProject/PracticeProject.csproj
     - name: Build
-      run: dotnet build .https://github.com/Usmangill18/Github-CI-CD-Actions/PracticeProject/PracticeProject/PracticeProject.csproj   --no-restore
+      run: dotnet build ./PracticeProject/PracticeProject/PracticeProject.csproj   --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
